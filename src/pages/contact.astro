@@ -8,10 +8,10 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Badge } from '@/components/ui/badge'
-import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
+import { Mail, Phone, MapPin, Clock, Send, Languages } from 'lucide-vue-next'
 ---
 
-<Layout title="Contact - Mama's Website" description="Get in touch with Mama">
+<Layout title="Kontakt - Zahnärztliche Gemeinschaftspraxis Dr. Hirsch & Brüggemann" description="Kontaktieren Sie unsere Zahnarztpraxis in Fürth. Termine nach Vereinbarung.">
   <Navigation client:load />
   
   <main>
@@ -21,17 +21,17 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
         <div class="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" class="mb-6">
             <Mail class="h-3 w-3 mr-1" />
-            Get In Touch
+            Kontakt & Terminvereinbarung
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Contact
-            <span class="text-primary">Mama</span>
+            Kontaktieren Sie
+            <span class="text-primary">unsere Praxis</span>
           </h1>
           
           <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
-            We'd love to hear from you! Whether you have a question, want to say hello, 
-            or just brighten Mama's day, don't hesitate to reach out.
+            Wir sind gerne für Sie da! Vereinbaren Sie einen Termin oder kontaktieren Sie uns 
+            für Fragen zu unseren Leistungen. Termine nach Vereinbarung.
           </p>
         </div>
       </div>
@@ -44,21 +44,21 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
           <!-- Contact Information -->
           <div>
             <h2 class="text-3xl font-bold text-foreground mb-8">
-              Let's Connect
+              Kontaktdaten
             </h2>
             
             <div class="space-y-6 mb-8">
               <Card>
                 <CardHeader>
                   <CardTitle class="flex items-center text-lg">
-                    <Mail class="mr-3 h-5 w-5 text-blue-600" />
-                    Email
+                    <Phone class="mr-3 h-5 w-5 text-green-600" />
+                    Telefon
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p class="text-muted-foreground">mama@example.com</p>
+                  <p class="text-muted-foreground text-lg font-semibold">0911/7568560</p>
                   <p class="text-sm text-muted-foreground mt-1">
-                    Best way to reach Mama for important messages
+                    Rufen Sie uns an für Terminvereinbarungen und Fragen
                   </p>
                 </CardContent>
               </Card>
@@ -66,14 +66,14 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
               <Card>
                 <CardHeader>
                   <CardTitle class="flex items-center text-lg">
-                    <Phone class="mr-3 h-5 w-5 text-green-600" />
-                    Phone
+                    <Mail class="mr-3 h-5 w-5 text-blue-600" />
+                    E-Mail
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p class="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p class="text-muted-foreground">hirsch-brueggemann@t-online.de</p>
                   <p class="text-sm text-muted-foreground mt-1">
-                    For urgent matters or just to hear her lovely voice
+                    Für schriftliche Anfragen und Terminvereinbarungen
                   </p>
                 </CardContent>
               </Card>
@@ -82,13 +82,45 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
                 <CardHeader>
                   <CardTitle class="flex items-center text-lg">
                     <MapPin class="mr-3 h-5 w-5 text-red-600" />
-                    Location
+                    Adresse
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p class="text-muted-foreground">Somewhere Special</p>
+                  <p class="text-muted-foreground">
+                    Zahnärztliche Gemeinschaftspraxis<br/>
+                    Dr. Ulrike Hirsch und Elke Brüggemann<br/>
+                    Moosweg 9e<br/>
+                    90768 Fürth
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="flex items-center text-lg">
+                    <Clock class="mr-3 h-5 w-5 text-purple-600" />
+                    Öffnungszeiten
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p class="text-muted-foreground">Termine nach Vereinbarung</p>
                   <p class="text-sm text-muted-foreground mt-1">
-                    Where love and warmth are always present
+                    Flexible Terminplanung nach Ihren Bedürfnissen
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <CardTitle class="flex items-center text-lg">
+                    <Languages class="mr-3 h-5 w-5 text-orange-600" />
+                    Sprachen
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p class="text-muted-foreground">Deutsch • English</p>
+                  <p class="text-sm text-muted-foreground mt-1">
+                    Wir sprechen Deutsch und Englisch
                   </p>
                 </CardContent>
               </Card>
@@ -96,15 +128,14 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
 
             <div class="bg-primary/5 rounded-lg p-6 border border-primary/20">
               <div class="flex items-start">
-                <Heart class="h-6 w-6 text-red-500 mt-1 mr-3 flex-shrink-0" />
+                <MapPin class="h-6 w-6 text-blue-500 mt-1 mr-3 flex-shrink-0" />
                 <div>
                   <h3 class="font-semibold text-foreground mb-2">
-                    A Note About Contact
+                    Ansprechpartnerin
                   </h3>
                   <p class="text-sm text-muted-foreground">
-                    Please note that this is a demonstration website. The contact information 
-                    shown here is for example purposes only. In a real implementation, 
-                    you would replace these with actual contact details.
+                    <strong>Frau Elke Brüggemann</strong><br/>
+                    Ihre Ansprechpartnerin für Termine und alle Fragen rund um unsere Praxis.
                   </p>
                 </div>
               </div>
@@ -115,61 +146,71 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
           <div>
             <Card>
               <CardHeader>
-                <CardTitle class="text-2xl">Send a Message</CardTitle>
+                <CardTitle class="text-2xl">Nachricht senden</CardTitle>
                 <CardDescription>
-                  Fill out the form below and we'll get back to you as soon as possible.
+                  Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <form class="space-y-6" action="#" method="post">
                   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div class="space-y-2">
-                      <Label for="firstName">First Name</Label>
+                      <Label for="firstName">Vorname</Label>
                       <Input 
                         id="firstName" 
                         name="firstName"
-                        placeholder="Your first name"
+                        placeholder="Ihr Vorname"
                         required
                       />
                     </div>
                     <div class="space-y-2">
-                      <Label for="lastName">Last Name</Label>
+                      <Label for="lastName">Nachname</Label>
                       <Input 
                         id="lastName" 
                         name="lastName"
-                        placeholder="Your last name"
+                        placeholder="Ihr Nachname"
                         required
                       />
                     </div>
                   </div>
 
                   <div class="space-y-2">
-                    <Label for="email">Email</Label>
+                    <Label for="email">E-Mail</Label>
                     <Input 
                       id="email" 
                       name="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="ihre.email@beispiel.de"
                       required
                     />
                   </div>
 
                   <div class="space-y-2">
-                    <Label for="subject">Subject</Label>
+                    <Label for="phone">Telefon (optional)</Label>
+                    <Input 
+                      id="phone" 
+                      name="phone"
+                      type="tel"
+                      placeholder="Ihre Telefonnummer"
+                    />
+                  </div>
+
+                  <div class="space-y-2">
+                    <Label for="subject">Betreff</Label>
                     <Input 
                       id="subject" 
                       name="subject"
-                      placeholder="What's this about?"
+                      placeholder="z.B. Terminanfrage, Beratung, etc."
                       required
                     />
                   </div>
 
                   <div class="space-y-2">
-                    <Label for="message">Message</Label>
+                    <Label for="message">Nachricht</Label>
                     <Textarea 
                       id="message" 
                       name="message"
-                      placeholder="Your message for Mama..."
+                      placeholder="Teilen Sie uns mit, wie wir Ihnen helfen können..."
                       rows={5}
                       required
                     />
@@ -177,7 +218,7 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
 
                   <Button type="submit" size="lg" class="w-full">
                     <Send class="mr-2 h-4 w-4" />
-                    Send Message
+                    Nachricht senden
                   </Button>
                 </form>
               </CardContent>
@@ -192,47 +233,60 @@ import { Mail, Phone, MapPin, Heart, Send } from 'lucide-vue-next'
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Frequently Asked Questions
+            Häufig gestellte Fragen
           </h2>
           <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Common questions about contacting Mama and this website
+            Antworten auf die wichtigsten Fragen zu unserer Praxis und Behandlungen
           </p>
         </div>
 
         <div class="max-w-3xl mx-auto space-y-6">
           <Card>
             <CardHeader>
-              <CardTitle class="text-lg">How quickly will Mama respond?</CardTitle>
+              <CardTitle class="text-lg">Wie kann ich einen Termin vereinbaren?</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Mama tries to respond to all messages within 24-48 hours. However, 
-                please be patient as she might be busy spreading joy and love elsewhere!
+                Sie erreichen uns telefonisch unter 0911/7568560 oder per E-Mail an 
+                hirsch-brueggemann@t-online.de. Wir vereinbaren Termine flexibel nach 
+                Ihren Bedürfnissen.
               </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle class="text-lg">Is this a real contact form?</CardTitle>
+              <CardTitle class="text-lg">Behandeln Sie auch Notfälle?</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                This is a demonstration website showcasing Astro.js and shadcn-vue components. 
-                The contact form is functional in terms of UI but would need backend integration 
-                to actually send messages.
+                Bei akuten Zahnschmerzen bemühen wir uns, Ihnen schnellstmöglich zu helfen. 
+                Rufen Sie uns an und schildern Sie Ihr Problem - wir finden eine Lösung.
               </p>
             </CardContent>
           </Card>
 
           <Card>
             <CardHeader>
-              <CardTitle class="text-lg">Can I visit Mama in person?</CardTitle>
+              <CardTitle class="text-lg">Sprechen Sie auch Englisch?</CardTitle>
             </CardHeader>
             <CardContent>
               <p class="text-muted-foreground">
-                Mama's heart is always open to visitors! However, please contact first 
-                to arrange a proper time for tea and cookies.
+                Ja, wir behandeln und beraten Sie gerne auf Deutsch und Englisch. 
+                Internationale Patienten sind in unserer Praxis herzlich willkommen.
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle class="text-lg">Wo finde ich Parkplätze?</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p class="text-muted-foreground">
+                Unsere Praxis befindet sich im Moosweg 9e in Fürth. Parkplätze sind 
+                in der Nähe verfügbar. Gerne geben wir Ihnen bei der Terminvereinbarung 
+                weitere Informationen zur Anfahrt.
               </p>
             </CardContent>
           </Card>

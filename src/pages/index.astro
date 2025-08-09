@@ -5,10 +5,10 @@ import Footer from '@/components/Footer.vue'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
+import { Heart, Star, Phone, Sparkles, Clock, MapPin, Mail } from 'lucide-vue-next'
 ---
 
-<Layout title="Home - Mama's Website" description="Welcome to Mama's beautiful website built with Astro.js and shadcn-vue">
+<Layout title="Zahnärztliche Gemeinschaftspraxis Dr. Hirsch & Brüggemann - Fürth" description="Zahnärztliche Gemeinschaftspraxis Dr. Ulrike Hirsch und Elke Brüggemann in Fürth. Termine nach Vereinbarung.">
   <Navigation client:load />
   
   <main>
@@ -19,44 +19,44 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
         <div class="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" class="mb-6">
             <Sparkles class="h-3 w-3 mr-1" />
-            Made with Love
+            Zahnheilkunde in Fürth
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Welcome to
-            <span class="text-primary">Mama's</span>
+            Zahnärztliche
+            <span class="text-primary">Gemeinschaftspraxis</span>
             <br />
-            Beautiful Website
+            Dr. Hirsch & Brüggemann
           </h1>
           
           <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
-            A showcase of modern web development using Astro.js and shadcn-vue components,
-            built with love and attention to detail for the most important person in our lives.
+            Ihre Zahngesundheit liegt uns am Herzen. In unserer modernen Praxis in Fürth 
+            bieten wir Ihnen umfassende zahnmedizinische Behandlungen in entspannter Atmosphäre.
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" class="text-lg px-8">
-              <Heart class="mr-2 h-5 w-5" />
-              Learn More About Mama
+              <Phone class="mr-2 h-5 w-5" />
+              Termin vereinbaren
             </Button>
             <Button variant="outline" size="lg" class="text-lg px-8">
-              <Coffee class="mr-2 h-5 w-5" />
-              Get In Touch
+              <MapPin class="mr-2 h-5 w-5" />
+              Praxis finden
             </Button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Services Section -->
     <section class="py-20 bg-muted/30">
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Built with Modern Technology
+            Unsere Leistungen
           </h2>
           <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-            This website showcases the perfect blend of performance, beauty, and functionality
+            Moderne Zahnmedizin mit persönlicher Betreuung in familiärer Atmosphäre
           </p>
         </div>
 
@@ -64,11 +64,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">🚀</span>
+                <span class="text-2xl">🦷</span>
               </div>
-              <CardTitle>Astro.js Framework</CardTitle>
+              <CardTitle>Allgemeine Zahnheilkunde</CardTitle>
               <CardDescription>
-                Lightning-fast static site generation with modern development experience
+                Umfassende Vorsorge, Behandlung und Beratung für gesunde Zähne
               </CardDescription>
             </CardHeader>
           </Card>
@@ -76,11 +76,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">💚</span>
+                <span class="text-2xl">✨</span>
               </div>
-              <CardTitle>Vue.js Components</CardTitle>
+              <CardTitle>Prophylaxe</CardTitle>
               <CardDescription>
-                Reactive and interactive components for a smooth user experience
+                Professionelle Zahnreinigung und präventive Maßnahmen
               </CardDescription>
             </CardHeader>
           </Card>
@@ -88,11 +88,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">🎨</span>
+                <span class="text-2xl">🔧</span>
               </div>
-              <CardTitle>shadcn-vue UI</CardTitle>
+              <CardTitle>Füllungstherapie</CardTitle>
               <CardDescription>
-                Beautiful, accessible, and customizable UI components
+                Moderne Füllungsmaterialien für langanhaltende Zahngesundheit
               </CardDescription>
             </CardHeader>
           </Card>
@@ -100,11 +100,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">🌈</span>
+                <span class="text-2xl">👑</span>
               </div>
-              <CardTitle>Tailwind CSS</CardTitle>
+              <CardTitle>Zahnersatz</CardTitle>
               <CardDescription>
-                Utility-first CSS framework for rapid and responsive design
+                Kronen, Brücken und Prothesen für ein natürliches Lächeln
               </CardDescription>
             </CardHeader>
           </Card>
@@ -112,11 +112,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">📱</span>
+                <span class="text-2xl">🌍</span>
               </div>
-              <CardTitle>Responsive Design</CardTitle>
+              <CardTitle>Mehrsprachige Betreuung</CardTitle>
               <CardDescription>
-                Perfect experience across all devices and screen sizes
+                Behandlung auf Deutsch und Englisch
               </CardDescription>
             </CardHeader>
           </Card>
@@ -124,11 +124,11 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
           <Card class="border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader class="pb-4">
               <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                <span class="text-2xl">⚡</span>
+                <span class="text-2xl">⏰</span>
               </div>
-              <CardTitle>Performance First</CardTitle>
+              <CardTitle>Flexible Termine</CardTitle>
               <CardDescription>
-                Optimized for speed with excellent Core Web Vitals scores
+                Termine nach Vereinbarung für Ihre Bequemlichkeit
               </CardDescription>
             </CardHeader>
           </Card>
@@ -141,18 +141,20 @@ import { Heart, Star, Coffee, Sparkles } from 'lucide-vue-next'
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="max-w-3xl mx-auto">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Ready to Learn More?
+            Vereinbaren Sie einen Termin
           </h2>
           <p class="text-lg text-muted-foreground mb-8">
-            Explore the different sections of this website to see all the amazing features and learn more about the technology behind it.
+            Wir freuen uns darauf, Sie in unserer Praxis begrüßen zu dürfen. 
+            Kontaktieren Sie uns für eine individuelle Beratung und Terminvereinbarung.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" class="text-lg px-8">
-              <Star class="mr-2 h-5 w-5" />
-              View About Page
+              <Phone class="mr-2 h-5 w-5" />
+              0911/7568560
             </Button>
             <Button variant="outline" size="lg" class="text-lg px-8">
-              Contact Us
+              <Mail class="mr-2 h-5 w-5" />
+              E-Mail senden
             </Button>
           </div>
         </div>
