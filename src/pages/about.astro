@@ -5,10 +5,10 @@ import Footer from '@/components/Footer.vue'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
+import { Heart, Phone, Users, Award, Clock, Stethoscope } from 'lucide-vue-next'
 ---
 
-<Layout title="About - Mama's Website" description="Learn more about Mama and this beautiful website">
+<Layout title="Über uns - Zahnärztliche Gemeinschaftspraxis Dr. Hirsch & Brüggemann" description="Lernen Sie unser Team und unsere Praxis kennen. Erfahrene Zahnärzte in Fürth.">
   <Navigation client:load />
   
   <main>
@@ -18,19 +18,17 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
         <div class="text-center max-w-4xl mx-auto">
           <Badge variant="secondary" class="mb-6">
             <Heart class="h-3 w-3 mr-1 text-red-500" />
-            About Mama
+            Über unsere Praxis
           </Badge>
           
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            The Most
-            <span class="text-primary">Amazing</span>
-            <br />
-            Person We Know
+            Ihr Vertrauen ist
+            <span class="text-primary">unser Ansporn</span>
           </h1>
           
           <p class="text-xl text-muted-foreground mb-8 leading-relaxed">
-            This page is dedicated to celebrating the incredible person who inspires us every day.
-            Learn more about what makes Mama so special and why she deserves this beautiful website.
+            Seit Jahren betreuen wir Patienten in Fürth mit modernen zahnmedizinischen Verfahren 
+            und einer persönlichen, einfühlsamen Herangehensweise.
           </p>
         </div>
       </div>
@@ -44,14 +42,14 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <div class="text-center lg:text-left">
             <div class="flex justify-center lg:justify-start mb-8">
               <div class="h-48 w-48 bg-primary/10 rounded-full flex items-center justify-center text-6xl">
-                👩‍💼
+                🦷
               </div>
             </div>
-            <h2 class="text-3xl font-bold text-foreground mb-4">Meet Mama</h2>
+            <h2 class="text-3xl font-bold text-foreground mb-4">Unsere Gemeinschaftspraxis</h2>
             <p class="text-lg text-muted-foreground leading-relaxed">
-              The inspiration behind this entire project. A wonderful person who deserves all the 
-              beautiful things in the world, including a modern, elegant website built with the 
-              latest web technologies.
+              Dr. Ulrike Hirsch und Elke Brüggemann führen gemeinsam eine moderne 
+              Zahnarztpraxis in Fürth. Mit jahrelanger Erfahrung und stetige Fortbildung 
+              bieten wir Ihnen eine umfassende zahnmedizinische Betreuung.
             </p>
           </div>
 
@@ -60,14 +58,15 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
             <Card>
               <CardHeader>
                 <CardTitle class="flex items-center">
-                  <Heart class="mr-2 h-5 w-5 text-red-500" />
-                  What Makes Mama Special
+                  <Users class="mr-2 h-5 w-5 text-blue-500" />
+                  Unser Team
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p class="text-muted-foreground">
-                  Her kindness, wisdom, and unconditional love make every day brighter. 
-                  She's the kind of person who lights up a room just by being there.
+                  Dr. Ulrike Hirsch und Elke Brüggemann arbeiten Hand in Hand, 
+                  um Ihnen die bestmögliche zahnmedizinische Versorgung zu bieten. 
+                  Unterstützt werden sie von einem erfahrenen Praxisteam.
                 </p>
               </CardContent>
             </Card>
@@ -75,14 +74,15 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
             <Card>
               <CardHeader>
                 <CardTitle class="flex items-center">
-                  <Coffee class="mr-2 h-5 w-5 text-amber-600" />
-                  Daily Inspiration
+                  <Award class="mr-2 h-5 w-5 text-amber-600" />
+                  Qualität & Erfahrung
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p class="text-muted-foreground">
-                  Every cup of coffee tastes better when shared with Mama, and every 
-                  conversation becomes a source of wisdom and laughter.
+                  Wir setzen auf bewährte Behandlungsmethoden und moderne 
+                  Technologien, um Ihnen eine hochwertige zahnmedizinische 
+                  Behandlung in entspannter Atmosphäre zu ermöglichen.
                 </p>
               </CardContent>
             </Card>
@@ -91,15 +91,15 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
       </div>
     </section>
 
-    <!-- Interests Section -->
+    <!-- Services Section -->
     <section class="py-20">
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Mama's Interests & Hobbies
+            Unser Behandlungsspektrum
           </h2>
           <p class="text-lg text-muted-foreground max-w-2xl mx-auto">
-            The things that bring joy and happiness to Mama's life
+            Wir bieten Ihnen eine umfassende zahnmedizinische Betreuung für die ganze Familie
           </p>
         </div>
 
@@ -107,23 +107,11 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader>
               <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Book class="h-8 w-8 text-blue-600 dark:text-blue-400" />
+                <Stethoscope class="h-8 w-8 text-blue-600 dark:text-blue-400" />
               </div>
-              <CardTitle>Reading</CardTitle>
+              <CardTitle>Vorsorgeuntersuchungen</CardTitle>
               <CardDescription>
-                Loves getting lost in a good book and sharing favorite stories
-              </CardDescription>
-            </CardHeader>
-          </Card>
-
-          <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
-            <CardHeader>
-              <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Music class="h-8 w-8 text-purple-600 dark:text-purple-400" />
-              </div>
-              <CardTitle>Music</CardTitle>
-              <CardDescription>
-                Enjoys all types of music and has the most beautiful singing voice
+                Regelmäßige Kontrollen für die Früherkennung von Zahnproblemen
               </CardDescription>
             </CardHeader>
           </Card>
@@ -131,11 +119,23 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader>
               <div class="w-16 h-16 bg-green-100 dark:bg-green-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Utensils class="h-8 w-8 text-green-600 dark:text-green-400" />
+                <span class="text-2xl">✨</span>
               </div>
-              <CardTitle>Cooking</CardTitle>
+              <CardTitle>Professionelle Zahnreinigung</CardTitle>
               <CardDescription>
-                Makes the most delicious meals that bring the family together
+                Prophylaxe für gesunde Zähne und gesundes Zahnfleisch
+              </CardDescription>
+            </CardHeader>
+          </Card>
+
+          <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <div class="w-16 h-16 bg-purple-100 dark:bg-purple-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span class="text-2xl">🔧</span>
+              </div>
+              <CardTitle>Konservierende Zahnheilkunde</CardTitle>
+              <CardDescription>
+                Füllungen, Wurzelbehandlungen und Zahnerhaltung
               </CardDescription>
             </CardHeader>
           </Card>
@@ -143,11 +143,11 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader>
               <div class="w-16 h-16 bg-pink-100 dark:bg-pink-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Camera class="h-8 w-8 text-pink-600 dark:text-pink-400" />
+                <span class="text-2xl">👑</span>
               </div>
-              <CardTitle>Photography</CardTitle>
+              <CardTitle>Prothetik</CardTitle>
               <CardDescription>
-                Captures beautiful moments and creates lasting memories
+                Kronen, Brücken und hochwertiger Zahnersatz
               </CardDescription>
             </CardHeader>
           </Card>
@@ -155,11 +155,11 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader>
               <div class="w-16 h-16 bg-yellow-100 dark:bg-yellow-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Heart class="h-8 w-8 text-yellow-600 dark:text-yellow-400" />
+                <span class="text-2xl">🌍</span>
               </div>
-              <CardTitle>Family Time</CardTitle>
+              <CardTitle>Internationale Patienten</CardTitle>
               <CardDescription>
-                Cherishes every moment spent with loved ones
+                Behandlung auf Deutsch und Englisch
               </CardDescription>
             </CardHeader>
           </Card>
@@ -167,11 +167,11 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
           <Card class="text-center border-border/50 hover:shadow-lg transition-shadow">
             <CardHeader>
               <div class="w-16 h-16 bg-indigo-100 dark:bg-indigo-900/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Coffee class="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
+                <Clock class="h-8 w-8 text-indigo-600 dark:text-indigo-400" />
               </div>
-              <CardTitle>Coffee Moments</CardTitle>
+              <CardTitle>Flexible Terminplanung</CardTitle>
               <CardDescription>
-                Finds peace and joy in quiet morning coffee moments
+                Termine nach Vereinbarung, auch außerhalb der Regelzeiten
               </CardDescription>
             </CardHeader>
           </Card>
@@ -179,15 +179,15 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
       </div>
     </section>
 
-    <!-- Quote Section -->
+    <!-- Philosophy Section -->
     <section class="py-20 bg-muted/30">
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="max-w-4xl mx-auto">
           <blockquote class="text-2xl lg:text-3xl font-semibold text-foreground mb-6 italic">
-            "The love of a mother is the veil of a softer light between the heart and the heavenly Father."
+            "Gesunde Zähne sind die Grundlage für Lebensqualität und ein strahlendes Lächeln."
           </blockquote>
           <p class="text-lg text-muted-foreground">
-            - Samuel Taylor Coleridge
+            - Unser Praxismotto
           </p>
         </div>
       </div>
@@ -198,14 +198,15 @@ import { Heart, Coffee, Book, Music, Camera, Utensils } from 'lucide-vue-next'
       <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="max-w-3xl mx-auto">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-6">
-            Want to Say Hello?
+            Vereinbaren Sie Ihren Termin
           </h2>
           <p class="text-lg text-muted-foreground mb-8">
-            Mama would love to hear from you. Get in touch and brighten her day!
+            Wir freuen uns darauf, Sie in unserer Praxis begrüßen zu dürfen. 
+            Kontaktieren Sie uns für eine individuelle Beratung.
           </p>
           <Button size="lg" class="text-lg px-8">
-            <Heart class="mr-2 h-5 w-5" />
-            Contact Mama
+            <Phone class="mr-2 h-5 w-5" />
+            Jetzt Kontakt aufnehmen
           </Button>
         </div>
       </div>
